@@ -14,6 +14,11 @@ export default defineConfig({
       '/api': {
         target: 'http://localhost:8080',
         changeOrigin: true,
+        // Le relais est serveur-à-serveur : sans Origin, Spring Security n'applique pas
+        // sa liste CORS et l'accès depuis une autre machine (LAN, conteneur) fonctionne.
+        configure: (proxy) => {
+          proxy.on('proxyReq', (proxyReq) => proxyReq.removeHeader('origin'))
+        },
       },
     },
   },
