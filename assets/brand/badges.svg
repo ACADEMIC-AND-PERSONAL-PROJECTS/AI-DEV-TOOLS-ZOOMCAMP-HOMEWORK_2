@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1039 44" width="1039" height="44" role="img" aria-label="Vibe coded, React 19, Spring Boot 3.5, Java 21, PostgreSQL 16, JWT Bearer, Vite 8">
+  <rect x="0" y="4" width="138" height="36" rx="18" fill="#16281E" stroke="#2A3A2E" stroke-width="2"/>
+  <text x="69" y="28" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,monospace" font-size="15" letter-spacing="2" fill="#C9D4C6">VIBE CODED</text>
+
+  <rect x="152" y="4" width="116" height="36" rx="18" fill="#101513" stroke="#2A3A2E" stroke-width="2"/>
+  <text x="210" y="28" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,monospace" font-size="15" letter-spacing="2" fill="#C9D4C6">REACT 19</text>
+
+  <rect x="282" y="4" width="193" height="36" rx="18" fill="#101513" stroke="#2A3A2E" stroke-width="2"/>
+  <text x="378" y="28" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,monospace" font-size="15" letter-spacing="2" fill="#C9D4C6">SPRING BOOT 3.5</text>
+
+  <rect x="489" y="4" width="105" height="36" rx="18" fill="#101513" stroke="#2A3A2E" stroke-width="2"/>
+  <text x="541" y="28" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,monospace" font-size="15" letter-spacing="2" fill="#C9D4C6">JAVA 21</text>
+
+  <rect x="608" y="4" width="171" height="36" rx="18" fill="#101513" stroke="#2A3A2E" stroke-width="2"/>
+  <text x="693" y="28" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,monospace" font-size="15" letter-spacing="2" fill="#C9D4C6">POSTGRESQL 16</text>
+
+  <rect x="793" y="4" width="138" height="36" rx="18" fill="#101513" stroke="#2A3A2E" stroke-width="2"/>
+  <text x="862" y="28" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,monospace" font-size="15" letter-spacing="2" fill="#C9D4C6">JWT BEARER</text>
+
+  <rect x="945" y="4" width="94" height="36" rx="18" fill="#101513" stroke="#2A3A2E" stroke-width="2"/>
+  <text x="992" y="28" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,monospace" font-size="15" letter-spacing="2" fill="#C9D4C6">VITE 8</text>
+</svg>

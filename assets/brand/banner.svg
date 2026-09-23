@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380" role="img" aria-label="TechBlocks — la documentation collaborative qui a de l'aura">
+  <defs>
+    <linearGradient id="tg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EDF2EA"/>
+      <stop offset="1" stop-color="#9DB893"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.42" r="0.6">
+      <stop offset="0" stop-color="#1D4131" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#0B0E0C" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="28"/>
+    </filter>
+    <clipPath id="panel">
+      <rect x="14" y="14" width="1172" height="352" rx="28"/>
+    </clipPath>
+  </defs>
+
+  <rect x="14" y="14" width="1172" height="352" rx="28" fill="#0B0E0C" stroke="#2A3A2E" stroke-width="2"/>
+  <g clip-path="url(#panel)">
+    <rect x="14" y="14" width="1172" height="352" fill="url(#glow)"/>
+    <ellipse cx="600" cy="180" rx="400" ry="86" fill="#1E3A2B" opacity="0.55" filter="url(#soft)"/>
+    <text x="1152" y="332" text-anchor="end" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic','Meiryo','MS Gothic',sans-serif" font-size="250" font-weight="900" fill="#32463D" opacity="0.3">術</text>
+  </g>
+
+  <rect x="58" y="58" width="56" height="56" rx="16" fill="#101513" stroke="#2A3A2E" stroke-width="2"/>
+  <text x="86" y="97" text-anchor="middle" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic','Meiryo','MS Gothic',sans-serif" font-size="31" fill="#788C5D">呪</text>
+
+  <g stroke="#788C5D" stroke-width="3" stroke-linecap="round" fill="none">
+    <path d="M48,96 V48 H96"/>
+    <path d="M1152,48 H1104 V96"/>
+    <path d="M48,284 V332 H96"/>
+    <path d="M1152,332 V284 H1104"/>
+  </g>
+
+  <text x="600" y="212" text-anchor="middle" font-family="Inter,'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="92" font-weight="800" letter-spacing="12" fill="url(#tg)">TECHBLOCKS</text>
+  <text x="600" y="262" text-anchor="middle" font-family="Inter,'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="500" letter-spacing="2" fill="#C9D4C6">La documentation collaborative qui a de l'aura</text>
+
+  <rect x="250" y="300" width="700" height="44" rx="22" fill="#101513" stroke="#2A3A2E" stroke-width="2"/>
+  <text x="600" y="328" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,monospace" font-size="14" letter-spacing="2" fill="#9FB6A2">領域展開 · DOMAIN EXPANSION — BLOC PAR BLOC, COMME UN GRIMOIRE</text>
+</svg>
