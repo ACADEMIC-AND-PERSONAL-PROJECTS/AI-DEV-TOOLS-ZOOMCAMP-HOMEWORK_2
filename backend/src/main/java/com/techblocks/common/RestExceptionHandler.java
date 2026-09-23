@@ -2,6 +2,7 @@ package com.techblocks.common;
 
 import org.springframework.context.MessageSourceResolvable;
 import org.springframework.core.Ordered;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.core.annotation.Order;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ProblemDetail;
@@ -39,6 +40,11 @@ public class RestExceptionHandler {
                 .toList();
         problemDetail.setProperty("errors", errors);
         return problemDetail;
+    }
+
+    @ExceptionHandler(DataIntegrityViolationException.class)
+    public ProblemDetail handleConflict(DataIntegrityViolationException exception) {
+        return ProblemDetail.forStatusAndDetail(HttpStatus.CONFLICT, "Conflit de données");
     }
 
     private static String formatError(MessageSourceResolvable error) {
