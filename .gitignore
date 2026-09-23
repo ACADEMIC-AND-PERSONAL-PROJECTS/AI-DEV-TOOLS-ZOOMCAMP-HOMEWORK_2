@@ -1,0 +1,27 @@
+# Node / Frontend
+node_modules/
+frontend/dist/
+frontend/coverage/
+*.log
+.vite/
+
+# Java / Backend
+backend/target/
+backend/.idea/
+backend/.vscode/
+*.iml
+
+# Environnements
+.env
+.env.local
+.env.*.local
+
+# Claude Code — personnel, ne pas commiter
+.claude/settings.local.json
+CLAUDE.local.md
+
+# Divers
+.DS_Store
+*.swp
+.idea/
+.vscode/

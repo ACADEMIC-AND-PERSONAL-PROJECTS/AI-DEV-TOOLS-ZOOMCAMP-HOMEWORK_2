@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "MCP_DOCKER_GATEWAY_DEV": {
+      "command": "docker",
+      "args": [
+        "mcp",
+        "gateway",
+        "run",
+        "--profile",
+        "dev"
+      ],
+      "type": "stdio"
+    }
+  }
+}
