@@ -1,5 +1,6 @@
 package com.techblocks.workspace;
 
+import com.techblocks.security.JwtSubjects;
 import com.techblocks.workspace.dto.CreateWorkspaceRequest;
 import com.techblocks.workspace.dto.MemberResponse;
 import com.techblocks.workspace.dto.WorkspaceResponse;
@@ -28,21 +29,17 @@ public class WorkspaceController {
 
     @GetMapping
     public List<WorkspaceResponse> list(@AuthenticationPrincipal Jwt jwt) {
-        return workspaceService.listForUser(userId(jwt));
+        return workspaceService.listForUser(JwtSubjects.userId(jwt));
     }
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public WorkspaceResponse create(@AuthenticationPrincipal Jwt jwt, @Valid @RequestBody CreateWorkspaceRequest request) {
-        return workspaceService.create(userId(jwt), request);
+        return workspaceService.create(JwtSubjects.userId(jwt), request);
     }
 
     @GetMapping("/{id}/members")
     public List<MemberResponse> members(@AuthenticationPrincipal Jwt jwt, @PathVariable UUID id) {
-        return workspaceService.listMembers(id, userId(jwt));
-    }
-
-    private UUID userId(Jwt jwt) {
-        return UUID.fromString(jwt.getSubject());
+        return workspaceService.listMembers(id, JwtSubjects.userId(jwt));
     }
 }
