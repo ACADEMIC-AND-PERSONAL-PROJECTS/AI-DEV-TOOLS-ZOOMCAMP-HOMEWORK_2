@@ -107,6 +107,46 @@ const documentTree = [
   },
 ]
 
+const revisions = [
+  {
+    id: 'cccc0001-cccc-cccc-cccc-cccccccccccc',
+    documentId: documentDetail.id,
+    title: 'Architecture v1',
+    snapshot: {
+      blocks: [
+        {
+          type: 'MARKDOWN',
+          content: { text: '# Ancienne version\n\nPremière mouture du document.' },
+          position: 0,
+        },
+        {
+          type: 'CALLOUT',
+          content: { variant: 'INFO', title: 'Note', message: 'Avant refonte.' },
+          position: 1,
+        },
+      ],
+    },
+    createdBy: user.id,
+    createdAt: '2026-09-20T10:00:00Z',
+  },
+  {
+    id: 'cccc0002-cccc-cccc-cccc-cccccccccccc',
+    documentId: documentDetail.id,
+    title: 'Architecture v2',
+    snapshot: {
+      blocks: [
+        {
+          type: 'MARKDOWN',
+          content: { text: '# Version initiale' },
+          position: 0,
+        },
+      ],
+    },
+    createdBy: user.id,
+    createdAt: '2026-09-22T10:00:00Z',
+  },
+]
+
 function problem(status: number, detail: string): HttpResponse {
   const body: ProblemDetail = { status, detail }
   return HttpResponse.json(body, { status })
@@ -166,6 +206,41 @@ export const handlers = [
       updatedAt: '2026-09-23T10:00:00Z',
     })
   }),
+
+  http.put(`${API_URL}/documents/:documentId/blocks`, async ({ request }) => {
+    const body = (await request.json()) as {
+      blocks: Array<{ id: string | null; type: string; content: Record<string, unknown> }>
+    }
+    const now = '2026-09-23T10:00:00Z'
+    return HttpResponse.json(
+      body.blocks.map((block, index) => ({
+        id: block.id ?? `bbbb000${index}-bbbb-bbbb-bbbb-bbbbbbbbbbbb`,
+        type: block.type,
+        content: block.content,
+        position: index,
+        createdAt: now,
+        updatedAt: now,
+      })),
+    )
+  }),
+
+  http.get(`${API_URL}/documents/:documentId/revisions`, () =>
+    HttpResponse.json(revisions),
+  ),
+
+  http.post(`${API_URL}/documents/:documentId/revisions`, () =>
+    HttpResponse.json(
+      {
+        id: 'cccc0003-cccc-cccc-cccc-cccccccccccc',
+        documentId: documentDetail.id,
+        title: 'Version manuelle',
+        snapshot: revisions[0].snapshot,
+        createdBy: user.id,
+        createdAt: '2026-09-23T11:00:00Z',
+      },
+      { status: 201 },
+    ),
+  ),
 
   http.post(`${API_URL}/workspaces/:workspaceId/documents`, async ({ request }) => {
     const body = (await request.json()) as { title?: string }
