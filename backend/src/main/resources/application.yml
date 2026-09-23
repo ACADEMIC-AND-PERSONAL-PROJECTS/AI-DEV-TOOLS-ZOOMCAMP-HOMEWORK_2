@@ -1,6 +1,9 @@
 spring:
   application:
     name: techblocks
+  mvc:
+    problemdetails:
+      enabled: true
   datasource:
     url: jdbc:postgresql://localhost:${DB_PORT:5434}/techblocks
     username: ${POSTGRES_USER:postgres}
