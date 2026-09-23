@@ -1,18 +1,18 @@
-<center>
+<div align="center">
 <img src="assets/brand/banner.svg" width="820" alt="TechBlocks — la documentation collaborative des équipes tech">
-</center>
+</div>
 
-<center>
+<div align="center">
 <img src="assets/gifs/higuruma-domaine.webp" width="680" alt="Higuruma Hiromi déploie son domaine — l'énergie maudite du projet">
 <br>
 <img src="assets/brand/badges.svg" width="700" alt="Vibe coded — React 19 — Spring Boot 3.5 — Java 21 — PostgreSQL 16 — JWT Bearer — Vite 8">
-</center>
+</div>
 
 **TechBlocks** est une plateforme de documentation collaborative orientée développeurs, taillée dans le même bois que Linear et Notion : des documents vivants découpés en blocs — markdown, code avec coloration syntaxique, diagrammes Mermaid, endpoints API et callouts. Un éditeur fluide, un autosave qui ne laisse rien s'échapper, un historique de révisions complet, le tout dans un thème sombre premium. Et surtout, c'est un projet **100% vibe coded** : chaque écran, chaque endpoint et chaque bloc a d'abord été brainstormé, challengé puis spécifié en dialoguant avec des IA, avant qu'une seule ligne de code ne soit écrite.
 
-<center>
+<div align="center">
 <img src="assets/brand/divider.svg" width="480" alt="Séparateur">
-</center>
+</div>
 
 ## 領域展開 · La genèse
 
@@ -22,7 +22,7 @@ Le **Google AI Professional Certificate**, sur Coursera, est un parcours de 8 co
 
 **Claude Code in Action**, sur la plateforme Skilljar d'Anthropic, est la formation officielle et gratuite pour piloter Claude Code : diriger le travail, configurer l'agent (CLAUDE.md, skills, permissions, hooks), automatiser les tâches répétitives (routines, mode headless, GitHub Actions) et vérifier le travail non supervisé. C'est elle qui a donné sa méthode à ce dépôt : instructions d'équipe, règles de style, conventions API, tests systématiques et commits fréquents — toute la discipline visible dans l'historique de ce repo en vient.
 
-<center>
+<div align="center">
 <table>
 <tr>
 <td width="50%" align="center">
@@ -43,16 +43,16 @@ Le **Google AI Professional Certificate**, sur Coursera, est un parcours de 8 co
 </td>
 </tr>
 </table>
-</center>
+</div>
 
-<center>
+<div align="center">
 <img src="assets/gifs/bureau-arcanes.webp" width="300" alt="Le bureau des arcanes — recherche et documentation">
 <img src="assets/gifs/higuruma-hiromi.gif" width="300" alt="Higuruma Hiromi — la vibe du développeur">
-</center>
+</div>
 
-<center>
+<div align="center">
 <img src="assets/brand/divider.svg" width="480" alt="Séparateur">
-</center>
+</div>
 
 ## 術式 · Les 5 blocs
 
@@ -69,16 +69,16 @@ Chaque document est un grimoire assemblé bloc par bloc, comme une série de sce
 <details>
 <summary>Le bloc Markdown en contexte</summary>
 
-<center>
+<div align="center">
 <img src="assets/app/06-bloc-markdown.png" width="560" alt="Le bloc Markdown dans l'éditeur">
-</center>
+</div>
 
 </details>
 
 <details>
 <summary>Voir les 4 autres blocs en action</summary>
 
-<center>
+<div align="center">
 <img src="assets/app/07-bloc-code.png" width="560" alt="Le bloc Code avec coloration syntaxique">
 <br><br>
 <img src="assets/app/08-bloc-mermaid.png" width="560" alt="Le bloc Mermaid avec diagramme rendu">
@@ -86,35 +86,35 @@ Chaque document est un grimoire assemblé bloc par bloc, comme une série de sce
 <img src="assets/app/09-bloc-api.png" width="560" alt="Le bloc API Endpoint avec méthode, headers et réponse">
 <br><br>
 <img src="assets/app/10-bloc-callout.png" width="560" alt="Le bloc Callout stylé">
-</center>
+</div>
 
 </details>
 
-<center>
+<div align="center">
 <img src="assets/brand/divider.svg" width="480" alt="Séparateur">
-</center>
+</div>
 
 ## 界 · La plateforme
 
 ### La landing
 
-<center>
+<div align="center">
 <img src="assets/landing/02-hero.png" width="660" alt="Le hero de la landing TechBlocks">
-</center>
+</div>
 
 <details>
 <summary>La landing complète en une seule image</summary>
 
-<center>
+<div align="center">
 <img src="assets/landing/01-landing-full.png" width="600" alt="La landing TechBlocks de haut en bas">
-</center>
+</div>
 
 </details>
 
 <details>
 <summary>Dérouler les sections suivantes de la landing</summary>
 
-<center>
+<div align="center">
 <img src="assets/landing/03-blocs-markdown.png" width="660" alt="Section blocs Markdown de la landing">
 <br><br>
 <img src="assets/landing/04-blocs-code.png" width="660" alt="Section blocs Code de la landing">
@@ -134,70 +134,70 @@ Chaque document est un grimoire assemblé bloc par bloc, comme une série de sce
 <img src="assets/landing/11-cta.png" width="660" alt="Section CTA de la landing">
 <br><br>
 <img src="assets/landing/12-footer.png" width="660" alt="Footer de la landing">
-</center>
+</div>
 
 </details>
 
 ### L'application
 
-<center>
+<div align="center">
 <img src="assets/app/05-editeur.png" width="660" alt="L'éditeur de blocs — le cœur de TechBlocks">
-</center>
+</div>
 
 <details>
 <summary>Le menu slash</summary>
 
-<center>
+<div align="center">
 <img src="assets/app/04-slash-menu.png" width="660" alt="Le menu slash pour insérer les blocs">
-</center>
+</div>
 
 </details>
 
 <details>
 <summary>Connexion et inscription</summary>
 
-<center>
+<div align="center">
 <img src="assets/app/01-login.png" width="660" alt="La page de connexion">
-</center>
+</div>
 
 </details>
 
 <details>
 <summary>Dashboard et éditeur au premier lancement</summary>
 
-<center>
+<div align="center">
 <img src="assets/app/02-dashboard-vide.png" width="660" alt="Le dashboard vide">
 <br><br>
 <img src="assets/app/03-editeur-vide.png" width="660" alt="L'éditeur vide, prêt à recevoir les blocs">
-</center>
+</div>
 
 </details>
 
 <details>
 <summary>Historique des révisions</summary>
 
-<center>
+<div align="center">
 <img src="assets/app/11-historique-vide.png" width="660" alt="L'historique vide">
 <br><br>
 <img src="assets/app/12-historique-revision.png" width="660" alt="L'historique avec une révision enregistrée">
-</center>
+</div>
 
 </details>
 
 <details>
 <summary>Switch de workspace et menu utilisateur</summary>
 
-<center>
+<div align="center">
 <img src="assets/app/13-switcher-workspace.png" width="660" alt="Le sélecteur de workspace">
 <br><br>
 <img src="assets/app/14-menu-utilisateur.png" width="660" alt="Le menu utilisateur">
-</center>
+</div>
 
 </details>
 
-<center>
+<div align="center">
 <img src="assets/brand/divider.svg" width="480" alt="Séparateur">
-</center>
+</div>
 
 ## 電 · La stack
 
@@ -253,10 +253,10 @@ cd frontend && npm run test && npm run lint && npx tsc --noEmit
 
 Chaque couche est couverte : `@WebMvcTest` et `@DataJpaTest` côté backend, Testcontainers pour la vraie base PostgreSQL, et côté frontend des tests comportementaux Vitest + React Testing Library avec msw — rendu des 5 blocs, menu slash, autosave avec debounce et PUT batch. La règle est sacrée : on ne modifie jamais un test pour faire passer du code ; la cause racine vit dans le code, pas dans les specs des tests.
 
-<center>
+<div align="center">
 <img src="assets/brand/divider.svg" width="480" alt="Séparateur">
 <br><br>
 <b>領域展開 · DOMAIN EXPANSION — DOCUMENTATION</b>
 <br><br>
 Vibe codé avec 🖤 et du café noir par <b>Khadim Mbaye</b>
-</center>
+</div>
