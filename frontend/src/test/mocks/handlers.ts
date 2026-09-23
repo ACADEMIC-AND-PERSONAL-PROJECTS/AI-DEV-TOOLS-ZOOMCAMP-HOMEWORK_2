@@ -1,7 +1,9 @@
 import { http, HttpResponse } from 'msw'
 import type { ProblemDetail } from '@/types'
 
-const API_URL = 'http://localhost:8080/api/v1'
+// Wildcard volontaire : l'app appelle l'API en absolu (`http://localhost:8080/api/v1`)
+// ou en relatif (`/api/v1`, relayé par le proxy Vite) selon VITE_API_URL.
+const API_URL = '*/api/v1'
 
 const user = {
   id: '11111111-1111-1111-1111-111111111111',
