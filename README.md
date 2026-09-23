@@ -22,17 +22,36 @@ Le **Google AI Professional Certificate**, sur Coursera, est un parcours de 8 co
 
 **Claude Code in Action**, sur la plateforme Skilljar d'Anthropic, est la formation officielle et gratuite pour piloter Claude Code : diriger le travail, configurer l'agent (CLAUDE.md, skills, permissions, hooks), automatiser les tâches répétitives (routines, mode headless, GitHub Actions) et vérifier le travail non supervisé. C'est elle qui a donné sa méthode à ce dépôt : instructions d'équipe, règles de style, conventions API, tests systématiques et commits fréquents — toute la discipline visible dans l'historique de ce repo en vient.
 
-<center>
-<img src="assets/certifications/google-ai.png" width="380" alt="Certificat Google AI Professional Certificate — Coursera">
-<img src="assets/certifications/claude-code.png" width="380" alt="Certificat Claude Code in Action — Anthropic Skilljar">
-<br>
-[Vérifier le certificat Google AI](https://coursera.org/share/c707ca1c396e3ef7590a9dfcde96db9d) · [Vérifier le certificat Claude Code](https://verify.skilljar.com/c/f2cpwqerjn49)
-</center>
+<table>
+<tr>
+<td width="50%" align="center">
+<b>Google AI Professional Certificate</b><br>
+<sub>Coursera · Google</sub>
+<br><br>
+<img src="assets/certifications/google-ai.png" width="360" alt="Certificat Google AI Professional Certificate — Coursera">
+<br><br>
+<a href="https://coursera.org/share/c707ca1c396e3ef7590a9dfcde96db9d">Vérifier le certificat</a>
+</td>
+<td width="50%" align="center">
+<b>Claude Code in Action</b><br>
+<sub>Anthropic · Skilljar</sub>
+<br><br>
+<img src="assets/certifications/claude-code.png" width="360" alt="Certificat Claude Code in Action — Anthropic Skilljar">
+<br><br>
+<a href="https://verify.skilljar.com/c/f2cpwqerjn49">Vérifier le certificat</a>
+</td>
+</tr>
+</table>
+
+<details>
+<summary>L'aura en contexte — la vibe en images</summary>
 
 <center>
 <img src="assets/gifs/bureau-arcanes.webp" width="300" alt="Le bureau des arcanes — recherche et documentation">
 <img src="assets/gifs/higuruma-hiromi.gif" width="300" alt="Higuruma Hiromi — l'aura du développeur">
 </center>
+
+</details>
 
 <center>
 <img src="assets/brand/divider.svg" width="480" alt="Séparateur">
@@ -82,6 +101,15 @@ Chaque document est un grimoire assemblé bloc par bloc, comme une série de sce
 </center>
 
 <details>
+<summary>La landing complète en une seule image</summary>
+
+<center>
+<img src="assets/landing/01-landing-full.png" width="600" alt="La landing TechBlocks de haut en bas">
+</center>
+
+</details>
+
+<details>
 <summary>Dérouler les sections suivantes de la landing</summary>
 
 <center>
@@ -104,15 +132,6 @@ Chaque document est un grimoire assemblé bloc par bloc, comme une série de sce
 <img src="assets/landing/11-cta.png" width="660" alt="Section CTA de la landing">
 <br><br>
 <img src="assets/landing/12-footer.png" width="660" alt="Footer de la landing">
-</center>
-
-</details>
-
-<details>
-<summary>La landing complète en une seule image</summary>
-
-<center>
-<img src="assets/landing/01-landing-full.png" width="600" alt="La landing TechBlocks de haut en bas">
 </center>
 
 </details>
