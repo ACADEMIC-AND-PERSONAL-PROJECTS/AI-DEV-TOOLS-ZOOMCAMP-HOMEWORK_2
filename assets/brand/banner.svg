@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380" role="img" aria-label="TechBlocks — la documentation collaborative qui a de l'aura">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380" role="img" aria-label="TechBlocks — la documentation collaborative des équipes tech">
   <defs>
     <linearGradient id="tg" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#EDF2EA"/>
@@ -34,7 +34,7 @@
   </g>
 
   <text x="600" y="212" text-anchor="middle" font-family="Inter,'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="92" font-weight="800" letter-spacing="12" fill="url(#tg)">TECHBLOCKS</text>
-  <text x="600" y="262" text-anchor="middle" font-family="Inter,'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="500" letter-spacing="2" fill="#C9D4C6">La documentation collaborative qui a de l'aura</text>
+  <text x="600" y="262" text-anchor="middle" font-family="Inter,'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="24" font-weight="500" letter-spacing="2" fill="#C9D4C6">La documentation collaborative des équipes tech</text>
 
   <rect x="250" y="300" width="700" height="44" rx="22" fill="#101513" stroke="#2A3A2E" stroke-width="2"/>
   <text x="600" y="328" text-anchor="middle" font-family="'JetBrains Mono','Cascadia Code','Fira Code',Consolas,monospace" font-size="14" letter-spacing="2" fill="#9FB6A2">領域展開 · DOMAIN EXPANSION — BLOC PAR BLOC, COMME UN GRIMOIRE</text>

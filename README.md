@@ -1,5 +1,5 @@
 <center>
-<img src="assets/brand/banner.svg" width="820" alt="TechBlocks — la documentation collaborative qui a de l'aura">
+<img src="assets/brand/banner.svg" width="820" alt="TechBlocks — la documentation collaborative des équipes tech">
 </center>
 
 <center>
@@ -45,15 +45,10 @@ Le **Google AI Professional Certificate**, sur Coursera, est un parcours de 8 co
 </table>
 </center>
 
-<details>
-<summary>L'aura en contexte — la vibe en images</summary>
-
 <center>
 <img src="assets/gifs/bureau-arcanes.webp" width="300" alt="Le bureau des arcanes — recherche et documentation">
-<img src="assets/gifs/higuruma-hiromi.gif" width="300" alt="Higuruma Hiromi — l'aura du développeur">
+<img src="assets/gifs/higuruma-hiromi.gif" width="300" alt="Higuruma Hiromi — la vibe du développeur">
 </center>
-
-</details>
 
 <center>
 <img src="assets/brand/divider.svg" width="480" alt="Séparateur">
