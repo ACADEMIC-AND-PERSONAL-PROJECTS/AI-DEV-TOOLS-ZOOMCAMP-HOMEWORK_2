@@ -22,6 +22,7 @@ Le **Google AI Professional Certificate**, sur Coursera, est un parcours de 8 co
 
 **Claude Code in Action**, sur la plateforme Skilljar d'Anthropic, est la formation officielle et gratuite pour piloter Claude Code : diriger le travail, configurer l'agent (CLAUDE.md, skills, permissions, hooks), automatiser les tâches répétitives (routines, mode headless, GitHub Actions) et vérifier le travail non supervisé. C'est elle qui a donné sa méthode à ce dépôt : instructions d'équipe, règles de style, conventions API, tests systématiques et commits fréquents — toute la discipline visible dans l'historique de ce repo en vient.
 
+<center>
 <table>
 <tr>
 <td width="50%" align="center">
@@ -42,6 +43,7 @@ Le **Google AI Professional Certificate**, sur Coursera, est un parcours de 8 co
 </td>
 </tr>
 </table>
+</center>
 
 <details>
 <summary>L'aura en contexte — la vibe en images</summary>
@@ -69,9 +71,14 @@ Chaque document est un grimoire assemblé bloc par bloc, comme une série de sce
 | 電 | **API Endpoint** | Méthode, headers, body de requête et exemple de réponse |
 | 符 | **Callout** | Notes, avertissements et alertes stylés |
 
+<details>
+<summary>Le bloc Markdown en contexte</summary>
+
 <center>
 <img src="assets/app/06-bloc-markdown.png" width="560" alt="Le bloc Markdown dans l'éditeur">
 </center>
+
+</details>
 
 <details>
 <summary>Voir les 4 autres blocs en action</summary>
