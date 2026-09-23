@@ -2,7 +2,8 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import type { ReactNode } from 'react'
 import { AuthProvider, useAuth } from '@/hooks/useAuth'
 import { AuthPage } from '@/pages/AuthPage'
-import { DashboardPage } from '@/pages/DashboardPage'
+import { DashboardEmptyState, DashboardPage } from '@/pages/DashboardPage'
+import { EditorPage } from '@/pages/EditorPage'
 
 function RequireAuth({ children }: { children: ReactNode }) {
   const { token } = useAuth()
@@ -38,7 +39,10 @@ function AppRoutes() {
             <DashboardPage />
           </RequireAuth>
         }
-      />
+      >
+        <Route index element={<DashboardEmptyState />} />
+        <Route path="documents/:documentId" element={<EditorPage />} />
+      </Route>
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   )

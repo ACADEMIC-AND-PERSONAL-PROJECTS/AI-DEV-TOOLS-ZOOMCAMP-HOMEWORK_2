@@ -1,22 +1,30 @@
 import { useCallback, useEffect, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
-import axios from 'axios'
+import { Outlet, useNavigate, useOutletContext } from 'react-router-dom'
 import { Blocks } from 'lucide-react'
 import { Navbar } from '@/components/layout/Navbar'
 import { Sidebar } from '@/components/layout/Sidebar'
 import { useAuth } from '@/hooks/useAuth'
+import { extractError } from '@/lib/errors'
 import * as documentsApi from '@/services/documents'
 import * as workspacesApi from '@/services/workspaces'
-import type { DocumentTree, ProblemDetail, Workspace } from '@/types'
+import type { DocumentTree, Workspace } from '@/types'
 
-function extractError(error: unknown): string {
-  if (axios.isAxiosError<ProblemDetail>(error)) {
-    const detail = error.response?.data?.detail
-    if (detail) return detail
-    const errors = error.response?.data?.errors
-    if (errors && errors.length > 0) return errors[0]
-  }
-  return 'Une erreur est survenue, réessayez'
+interface DashboardOutletContext {
+  hasWorkspace: boolean
+}
+
+export function DashboardEmptyState() {
+  const { hasWorkspace } = useOutletContext<DashboardOutletContext>()
+  return (
+    <div className="flex h-full flex-col items-center justify-center gap-3 text-zinc-500">
+      <Blocks className="size-8" />
+      <p className="text-sm">
+        {hasWorkspace
+          ? 'Sélectionnez un document dans la barre latérale'
+          : 'Créez votre premier workspace pour commencer'}
+      </p>
+    </div>
+  )
 }
 
 export function DashboardPage() {
@@ -81,12 +89,18 @@ export function DashboardPage() {
     setSelectedDocumentId(null)
   }
 
+  const handleSelectDocument = (documentId: string) => {
+    setSelectedDocumentId(documentId)
+    navigate(`/documents/${documentId}`)
+  }
+
   const handleCreateDocument = async () => {
     if (!currentWorkspaceId) return
     try {
       const document = await documentsApi.createDocument(currentWorkspaceId, {})
       setSelectedDocumentId(document.id)
       await loadTree(currentWorkspaceId)
+      navigate(`/documents/${document.id}`)
     } catch (err) {
       setError(extractError(err))
     }
@@ -110,26 +124,22 @@ export function DashboardPage() {
           selectedDocumentId={selectedDocumentId}
           onSelectWorkspace={handleSelectWorkspace}
           onCreateWorkspace={handleCreateWorkspace}
-          onSelectDocument={setSelectedDocumentId}
+          onSelectDocument={handleSelectDocument}
           onCreateDocument={handleCreateDocument}
         />
-        <main className="flex min-w-0 flex-1 items-center justify-center bg-[#18181b]">
+        <main className="flex min-w-0 flex-1 flex-col overflow-y-auto bg-[#18181b]">
           {loading ? (
-            <p className="text-sm text-zinc-500">Chargement…</p>
+            <div className="flex h-full items-center justify-center">
+              <p className="text-sm text-zinc-500">Chargement…</p>
+            </div>
           ) : error ? (
-            <p role="alert" className="max-w-md text-sm text-red-300">
-              {error}
-            </p>
-          ) : currentWorkspace ? (
-            <div className="flex flex-col items-center gap-3 text-zinc-500">
-              <Blocks className="size-8" />
-              <p className="text-sm">Sélectionnez un document dans la barre latérale</p>
+            <div className="flex h-full items-center justify-center">
+              <p role="alert" className="max-w-md text-sm text-red-300">
+                {error}
+              </p>
             </div>
           ) : (
-            <div className="flex flex-col items-center gap-3 text-zinc-500">
-              <Blocks className="size-8" />
-              <p className="text-sm">Créez votre premier workspace pour commencer</p>
-            </div>
+            <Outlet context={{ hasWorkspace: currentWorkspace !== null }} />
           )}
         </main>
       </div>

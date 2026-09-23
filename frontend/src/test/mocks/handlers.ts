@@ -28,6 +28,63 @@ const workspaces = [
   },
 ]
 
+const documentDetail = {
+  id: '55555555-5555-5555-5555-555555555555',
+  workspaceId: '22222222-2222-2222-2222-222222222222',
+  parentId: '44444444-4444-4444-4444-444444444444',
+  title: 'Architecture',
+  icon: '🏗️',
+  position: 0,
+  createdAt: '2026-09-11T10:00:00Z',
+  updatedAt: '2026-09-12T10:00:00Z',
+  blocks: [
+    {
+      id: 'aaaa0001-aaaa-aaaa-aaaa-aaaaaaaaaaaa',
+      type: 'MARKDOWN',
+      content: { text: '# Vue globale\n\nArchitecture **monorepo**.' },
+      position: 0,
+      createdAt: '2026-09-11T10:00:00Z',
+      updatedAt: '2026-09-11T10:00:00Z',
+    },
+    {
+      id: 'aaaa0002-aaaa-aaaa-aaaa-aaaaaaaaaaaa',
+      type: 'CODE',
+      content: {
+        language: 'typescript',
+        code: 'const app = "TechBlocks"',
+        showLineNumbers: true,
+        fileName: 'main.ts',
+      },
+      position: 1,
+      createdAt: '2026-09-11T10:05:00Z',
+      updatedAt: '2026-09-11T10:05:00Z',
+    },
+    {
+      id: 'aaaa0003-aaaa-aaaa-aaaa-aaaaaaaaaaaa',
+      type: 'API_ENDPOINT',
+      content: {
+        method: 'GET',
+        endpoint: '/api/v1/workspaces',
+        summary: 'Liste les workspaces',
+        headers: [{ key: 'Authorization', value: 'Bearer <token>' }],
+        requestBody: '',
+        responseExample: '{"items": []}',
+      },
+      position: 2,
+      createdAt: '2026-09-11T10:10:00Z',
+      updatedAt: '2026-09-11T10:10:00Z',
+    },
+    {
+      id: 'aaaa0004-aaaa-aaaa-aaaa-aaaaaaaaaaaa',
+      type: 'CALLOUT',
+      content: { variant: 'INFO', title: 'À savoir', message: 'Le JWT expire après 24h.' },
+      position: 3,
+      createdAt: '2026-09-11T10:15:00Z',
+      updatedAt: '2026-09-11T10:15:00Z',
+    },
+  ],
+}
+
 const documentTree = [
   {
     id: '44444444-4444-4444-4444-444444444444',
@@ -97,6 +154,18 @@ export const handlers = [
   http.get(`${API_URL}/workspaces/:workspaceId/documents`, () =>
     HttpResponse.json(documentTree),
   ),
+
+  http.get(`${API_URL}/documents/:documentId`, () => HttpResponse.json(documentDetail)),
+
+  http.put(`${API_URL}/documents/:documentId`, async ({ request }) => {
+    const body = (await request.json()) as { title?: string; icon?: string }
+    return HttpResponse.json({
+      ...documentDetail,
+      title: body.title ?? documentDetail.title,
+      icon: body.icon ?? documentDetail.icon,
+      updatedAt: '2026-09-23T10:00:00Z',
+    })
+  }),
 
   http.post(`${API_URL}/workspaces/:workspaceId/documents`, async ({ request }) => {
     const body = (await request.json()) as { title?: string }
