@@ -29,7 +29,7 @@ Le **Google AI Professional Certificate**, sur Coursera, est un parcours de 8 co
 <b>Google AI Professional Certificate</b><br>
 <sub>Coursera · Google</sub>
 <br><br>
-<img src="assets/certifications/google-ai.png" width="360" alt="Certificat Google AI Professional Certificate — Coursera">
+<img src="assets/certifications/google-ai.png" width="400" alt="Certificat Google AI Professional Certificate — Coursera">
 <br><br>
 <a href="https://coursera.org/share/c707ca1c396e3ef7590a9dfcde96db9d">Vérifier le certificat</a>
 </td>
@@ -37,7 +37,7 @@ Le **Google AI Professional Certificate**, sur Coursera, est un parcours de 8 co
 <b>Claude Code in Action</b><br>
 <sub>Anthropic · Skilljar</sub>
 <br><br>
-<img src="assets/certifications/claude-code.png" width="360" alt="Certificat Claude Code in Action — Anthropic Skilljar">
+<img src="assets/certifications/claude-code.png" width="400" alt="Certificat Claude Code in Action — Anthropic Skilljar">
 <br><br>
 <a href="https://verify.skilljar.com/c/f2cpwqerjn49">Vérifier le certificat</a>
 </td>
