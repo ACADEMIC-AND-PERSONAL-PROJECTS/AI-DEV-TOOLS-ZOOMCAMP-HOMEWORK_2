@@ -6,9 +6,9 @@ import { AuthProvider } from '@/hooks/useAuth'
 import { TOKEN_KEY } from '@/services/api'
 import { AuthPage } from './AuthPage'
 
-function renderAuthPage() {
+function renderAuthPage(initialEntries: string[] = ['/auth']) {
   return render(
-    <MemoryRouter>
+    <MemoryRouter initialEntries={initialEntries}>
       <AuthProvider>
         <AuthPage />
       </AuthProvider>
@@ -50,6 +50,14 @@ describe('AuthPage', () => {
 
     expect(await screen.findByRole('alert')).toHaveTextContent('Identifiants invalides')
     expect(localStorage.getItem(TOKEN_KEY)).toBeNull()
+  })
+
+  it('shouldOpenRegisterFormWhenModeQueryParamIsRegister', () => {
+    renderAuthPage(['/auth?mode=register'])
+
+    expect(screen.getByText('Créez votre compte')).toBeInTheDocument()
+    expect(screen.getByLabelText('Nom complet')).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: 'Créer le compte' })).toBeInTheDocument()
   })
 
   it('shouldPersistTokenWhenRegisterSucceeds', async () => {
